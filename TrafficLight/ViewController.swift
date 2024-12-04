@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var trafficLightColorRed: UIView!
     @IBOutlet var trafficLightColorYellow: UIView!
     @IBOutlet var trafficLightColorGreen: UIView!
-    
+     
 // Создаем аутлет кнопки
     
     @IBOutlet var startButton: UIButton!
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         trafficLightColorGreen.alpha = 0.3 */
         
         trafficLightOff = [trafficLightColorRed, trafficLightColorYellow, trafficLightColorGreen]
-        
+           
 // Тут мы используем forEach что бы замыкания применились к каждому элементу массива, $0 используется из расчета что в массиве может быть один элемент
         
         trafficLightOff.forEach { $0.alpha = 0.3 }
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         
     }
 }
-
+// привет
 /*
  1. trafficLightOff.forEach { $0.alpha = 0.3 }
  Этот код выполняет цикл по всем элементам массива trafficLightOff, который содержит все элементы светофора (trafficLightColorRed, trafficLightColorYellow, trafficLightColorGreen).
